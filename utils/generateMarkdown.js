@@ -1,53 +1,77 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) { }
+function renderLicenseBadge(license) {
+  if (license !== 'None') {
+    return `![Github license](https://img.shields.io/badge/license-${license}-blue.svg)`;
+  }
+  return '';
+ }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) { }
+function renderLicenseLink(license) {
+  if (license !== "None") {
+    return `* [License](#license)`
+  }
+  return '';
+ }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) { }
+function renderLicenseSection(license) { 
+  if (license !== 'None') {
+    return `## License\nThis project is licensed under the ${license} license`
+  }
+  return '';
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-
+  ${renderLicenseBadge(data.license)}
   ## Description
 
   ${data.description}
 
   ## Table of Contents
 
-  ${}
+  * [Installation](#installation-instructions)
+  
+  * [Usage](#usage)
 
-  ## Instulation Instructions
+  ${renderLicenseLink(data.license)}
 
-  ${}
+  * [Contributing](#contributions)
+  
+  * [Tests](#tests)
+  
+  * [Questions](#questions)
+
+  ## Installation Instructions
+
+  ${data.install}
 
   ## Usage
 
   ${data.usage}
 
-  ## License
-
-  ${data.license}
+  ${renderLicenseSection(data.license)}
 
   ## Contributions
 
   ${data.contributions}
 
-  ## Test
+  ## Tests
 
   To run tests:
 
   \`\`\`js
-  npm run tests
+  ${data.tests}
   \`\`\`
 
   ## Questions
-  GitHub repository and email: ${data.userName} ${data.email}
+  If you have any questions you can email me at: ${data.email} \n
+  You can find more of my work at: [${data.userName}](https://github.com/${data.userName}) 
 `;
 }
 
