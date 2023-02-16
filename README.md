@@ -1,8 +1,8 @@
-# Title
+# README Generator
   ![Github license](https://img.shields.io/badge/license-MIT-blue.svg)
   ## Description
 
-  Discritionm
+  A command-line application to quickly create README.
 
   ## Table of Contents
 
@@ -12,7 +12,7 @@
 
   * [License](#license)
 
-  * [Contributing](#contributions)
+  * [Contributions](#contributions)
   
   * [Tests](#tests)
   
@@ -20,27 +20,28 @@
 
   ## Installation Instructions
 
-  App
+  Clone code from GitHub repository/Caliza.
 
   ## Usage
 
-  Use
+  Open terminal and in command-line entre node index.js.
 
   ## License
 This project is licensed under the MIT license
 
   ## Contributions
 
-  Don't
+  No contributions at the moment.
 
   ## Tests
 
   To run tests:
 
   ```js
-  Commands
+  N/A
   ```
 
   ## Questions
-  If you have any questions you can email me at: caliza.email
+  If you have any questions you can email me at: rances.rodriguez@gmail.com 
+
   You can find more of my work at: [Caliza](https://github.com/Caliza) 
